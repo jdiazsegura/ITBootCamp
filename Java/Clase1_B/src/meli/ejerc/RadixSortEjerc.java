@@ -16,5 +16,8 @@ public class RadixSortEjerc
 		{
 			System.out.print(arr[i]+(i<arr.length-1?",":""));
 		}
+		System.out.println("/n");
+		String test1 = StringUtil.replicate('c',5);
+		System.out.println(test1);
 	}
 }
