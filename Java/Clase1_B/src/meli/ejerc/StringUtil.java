@@ -1,8 +1,5 @@
 package meli.ejerc;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class StringUtil {
     // Retorna una cadena compuesta por n caracteres c
     // Ejemplo: replicate('x',5) ==> 'xxxxx'
