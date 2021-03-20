@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70f4e316-078b-4f81-8ff7-0b3a821466a7" name="Default Changelist" comment="Add elements worked on the java second class.">
+    <list default="true" id="70f4e316-078b-4f81-8ff7-0b3a821466a7" name="Default Changelist" comment="Complete the RadixSort Example, this method implements a Sort Algorithm for sort elements on a Array of integers.">
+      <change afterPath="$PROJECT_DIR$/../Clase2_A/src/com/MeLi/StringUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Clase1_B/meli/ejerc/RadixSortEjerc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Clase1_B/meli/ejerc/RadixSortEjerc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meli/ejerc/RadixSortEjerc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/meli/ejerc/RadixSortEjerc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meli/ejerc/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/meli/ejerc/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase2_A/src/com/MeLi/CuentaCorriente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase2_A/src/com/MeLi/CuentaCorriente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <workItem from="1616162056240" duration="187000" />
       <workItem from="1616185730702" duration="1059000" />
       <workItem from="1616206285632" duration="1120000" />
-      <workItem from="1616249910438" duration="8657000" />
+      <workItem from="1616249910438" duration="9851000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaning StringUtil.java methods">
       <created>1616250742104</created>
@@ -109,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616250806792</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cleaning StringUtil class and methods">
+      <created>1616262051559</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616262051559</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Complete the RadixSort Example, this method implements a Sort Algorithm for sort elements on a Array of integers.">
+      <created>1616262121088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616262121088</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +144,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Cleaning StringUtil.java methods" />
     <MESSAGE value="Add elements worked on the java second class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add elements worked on the java second class." />
+    <MESSAGE value="Cleaning StringUtil class and methods" />
+    <MESSAGE value="Complete the RadixSort Example, this method implements a Sort Algorithm for sort elements on a Array of integers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete the RadixSort Example, this method implements a Sort Algorithm for sort elements on a Array of integers." />
   </component>
 </project>

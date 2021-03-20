@@ -5,6 +5,9 @@ public class CuentaCorriente {
     private double saldo;
     private int numeroCuenta;
 
+    public CuentaCorriente() {
+    }
+
     public CuentaCorriente(double saldo, int numeroCuenta) {
         this.saldo = saldo;
         this.numeroCuenta = numeroCuenta;
@@ -15,8 +18,6 @@ public class CuentaCorriente {
         this.numeroCuenta = cuentaCorriente.getNumeroCuenta();
     }
 
-    public CuentaCorriente() {
-    }
 
     public double getSaldo() {
         return saldo;
@@ -34,20 +35,25 @@ public class CuentaCorriente {
         this.numeroCuenta = numeroCuenta;
     }
 
-    private void ingreso(){
+    private void ingreso(double saldoAIngresar) {
+        setSaldo(getSaldo() + saldoAIngresar);
+    }
+
+    private void egreso(double saldoARetirar) {
+        if (getSaldo() >= saldoARetirar) {
+            setSaldo(getSaldo() - saldoARetirar);
+        } else {
+            System.out.println("The account dont have enough money");
+        }
+    }
+
+    private void reintegro() {
 
     }
 
-    private void egreso(){
-
-    }
-
-    private void reintegro(){
-
-    }
-
-    private void transferencia(){
-
+    private void transferencia(CuentaCorriente cuentaCorriente, double value) {
+        cuentaCorriente.egreso(value);
+        this.ingreso(value);
     }
 
 
