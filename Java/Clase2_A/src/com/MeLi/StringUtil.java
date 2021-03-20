@@ -1,5 +1,9 @@
 package com.MeLi;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+
 public class StringUtil {
     // Retorna una cadena compuesta por n caracteres c
     // Ejemplo: replicate('x',5) ==> 'xxxxx'
@@ -61,5 +65,49 @@ public class StringUtil {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = lpad(arr[i], maxLong, c);
         }
+    }
+
+    // lpad pero agregando caracteres a la derecha
+    public static String rpad(String string,char filler, int length){
+        int fillCount = length - string.length();
+
+        String filling = replicate(filler, fillCount);
+
+        return  string + filling;
+    }
+
+    // Retorna una cadena identica a s pero sin espacios a la izquierda
+    public static String ltrim(String s){
+        int i = 0;
+        while (i < s.length() && Character.isWhitespace(s.charAt(i))) {
+            i++;
+        }
+        String ltrim = s.substring(i);
+        return ltrim;
+    }
+
+    // Retorna una cadena identica a s pero sin espacios a la derecha
+    public static String rtrim(String s){
+        int i = s.length()-1;
+        while (i >= 0 && Character.isWhitespace(s.charAt(i))) {
+            i--;
+        }
+        String rtrim = s.substring(0,i+1);
+        return rtrim;
+    }
+
+    // Retorna una cadena identica a s pero sin espacios a la derecha e izquierda
+    public static String trim(String s){
+        return s.trim();
+    }
+
+    public static int indexOfN(String s,char c,int n){
+        //TODO
+        return 0;
+    }
+    public static void main(String[] args) {
+        System.out.println(ltrim("   Hola "));
+        System.out.println(trim("    Holaa  "));
+
     }
 }
