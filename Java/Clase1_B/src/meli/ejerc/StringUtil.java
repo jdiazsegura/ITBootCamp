@@ -7,31 +7,20 @@ public class StringUtil {
     // Retorna una cadena compuesta por n caracteres c
     // Ejemplo: replicate('x',5) ==> 'xxxxx'
     public static String replicate(char c, int n) {
-        String flag = "";
-        for (int i = 0; i < n; i++) {
-            flag += c;
-        }
-        return flag;
+        String string = Character.toString(c);
+        return string.repeat(n);
     }
 
     // Retorna una cadena de longitud n, compuesta por s
     // y precedida de tantos caracteres c como sea necesario
     // para completar la longitud mencionada
     // Ejemplo lpad("5",3,'0') ==> "005"
-    public static String lpad(String s, int n, char c) {
-        ArrayList<String> arreglo = new ArrayList<>();
-        String flag2 = "";
-        for (int i = 0; i < s.length(); i++) {
-            char flag = s.charAt(i);
-            arreglo.add(String.valueOf(flag));
-        }
-        while(arreglo.size() < n){
-            arreglo.add(0,String.valueOf(c));
-        }
-        for(String variable: arreglo){
-            flag2 += variable;
-        }
-        return flag2;
+    public static String lpad(String string, int length, char filler) {
+        int fillCount = length - string.length();
+
+        String filling = replicate(filler, fillCount);
+
+        return filling + string;
     }
 
     // Retorna un String[] conteniendo los elementos de arr
@@ -60,7 +49,7 @@ public class StringUtil {
         int flag2 = 0;
         for (int i = 0; i < arr.length; i++) {
             String flag = arr[i];
-            if(flag2 < flag.length()){
+            if (flag2 < flag.length()) {
                 flag2 = flag.length();
             }
         }
@@ -73,7 +62,7 @@ public class StringUtil {
         int maxLong = maxLength(arr);
 
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = lpad(arr[i],maxLong,c);
+            arr[i] = lpad(arr[i], maxLong, c);
         }
     }
 }

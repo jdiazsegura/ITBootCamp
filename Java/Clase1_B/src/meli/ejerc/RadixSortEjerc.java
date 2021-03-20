@@ -7,7 +7,11 @@ public class RadixSortEjerc
 	public static void radixSort(int []arr)
 	{
 		// PROGRAMAR AQUI
+		String[] arr2 = StringUtil.toStringArray(arr);
+		StringUtil.lNormalize(arr2,'0');
+		System.out.println(Arrays.toString(arr2));
 	}
+
 
 	public static void main(String[] args)
 	{
@@ -15,9 +19,8 @@ public class RadixSortEjerc
 		radixSort(arr);
 		
 		for(int i=0; i<arr.length;i++)
-		{
-			System.out.print(arr[i]+(i<arr.length-1?",":""));
-		}
+		
+		
 		System.out.println("");
 		String test1 = StringUtil.replicate('x',20);
 		System.out.println(test1);
@@ -36,6 +39,7 @@ public class RadixSortEjerc
 		String[] flag3 = {"12345","12","123","1234"};
 		int test5 = StringUtil.maxLength(flag3);
 		System.out.println(test5);
+		
 	}
 
 }
