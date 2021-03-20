@@ -3,6 +3,9 @@ package com.MeLi;
 public class Contador {
     private int valor;
 
+    public Contador() {
+    }
+
     public Contador(int valor) {
         this.valor = valor;
     }
@@ -11,8 +14,6 @@ public class Contador {
         this.valor = contador.getValor();
     }
 
-    public Contador() {
-    }
 
     public void incrementar() {
         valor++;

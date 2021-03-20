@@ -36,12 +36,12 @@ public class CuentaCorriente {
     }
 
     private void ingreso(double saldoAIngresar) {
-        setSaldo(getSaldo() + saldoAIngresar);
+        this.saldo = this.saldo + saldoAIngresar;
     }
 
     private void egreso(double saldoARetirar) {
-        if (getSaldo() >= saldoARetirar) {
-            setSaldo(getSaldo() - saldoARetirar);
+        if (this.saldo >= saldoARetirar) {
+            this.saldo = this.saldo - saldoARetirar;
         } else {
             System.out.println("The account dont have enough money");
         }
