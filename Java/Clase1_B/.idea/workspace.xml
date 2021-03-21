@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f4e316-078b-4f81-8ff7-0b3a821466a7" name="Default Changelist" comment="Complete the RadixSort Example, this method implements a Sort Algorithm for sort elements on a Array of integers.">
-      <change afterPath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/Contador.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/CuentaCorriente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/Fecha.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/Fraccion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/Libro.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/StringUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/StringUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Clase2_A/src/com/MeLi/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase2_A/src/com/MeLi/StringUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

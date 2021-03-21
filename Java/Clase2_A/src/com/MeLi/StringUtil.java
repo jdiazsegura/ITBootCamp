@@ -68,16 +68,16 @@ public class StringUtil {
     }
 
     // lpad pero agregando caracteres a la derecha
-    public static String rpad(String string,char filler, int length){
+    public static String rpad(String string, char filler, int length) {
         int fillCount = length - string.length();
 
         String filling = replicate(filler, fillCount);
 
-        return  string + filling;
+        return string + filling;
     }
 
     // Retorna una cadena identica a s pero sin espacios a la izquierda
-    public static String ltrim(String s){
+    public static String ltrim(String s) {
         int i = 0;
         while (i < s.length() && Character.isWhitespace(s.charAt(i))) {
             i++;
@@ -87,27 +87,35 @@ public class StringUtil {
     }
 
     // Retorna una cadena identica a s pero sin espacios a la derecha
-    public static String rtrim(String s){
-        int i = s.length()-1;
+    public static String rtrim(String s) {
+        int i = s.length() - 1;
         while (i >= 0 && Character.isWhitespace(s.charAt(i))) {
             i--;
         }
-        String rtrim = s.substring(0,i+1);
+        String rtrim = s.substring(0, i + 1);
         return rtrim;
     }
 
     // Retorna una cadena identica a s pero sin espacios a la derecha e izquierda
-    public static String trim(String s){
+    public static String trim(String s) {
         return s.trim();
     }
 
-    public static int indexOfN(String s,char c,int n){
-        //TODO
-        return 0;
+    // Method that return the n position of a character in a string array
+    public static int indexOfN(String s, char c, int n) {
+        var array = s.toCharArray();
+        int count = 0;
+        int count2 = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == c) {
+                count++;
+                count2 = i;
+            }
+            if (count == n){
+                break;
+            }
+        }
+        return count2;
     }
-    public static void main(String[] args) {
-        System.out.println(ltrim("   Hola "));
-        System.out.println(trim("    Holaa  "));
 
-    }
 }
