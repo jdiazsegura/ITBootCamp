@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f4e316-078b-4f81-8ff7-0b3a821466a7" name="Default Changelist" comment="Complete the RadixSort Example, this method implements a Sort Algorithm for sort elements on a Array of integers.">
+      <change afterPath="$PROJECT_DIR$/../Clase2_A/.idea/sonarlint/issuestore/4/5/451d142371b75b022d2420b6cdc5b46a223d7e5a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase2_A/.idea/sonarlint/issuestore/8/5/85bcf6fbcc157268ad79bb51630431eb8f59c7bf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Clase2_A/.idea/sonarlint/issuestore/e/f/ef932411e1bb98bfdc45e58293dd70c062c2450f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase2_A/out/production/Clase2_A/com/MeLi/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Clase2_A/src/com/MeLi/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase2_A/src/com/MeLi/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Clase1_B/meli/ejerc/RadixSortEjerc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Clase1_B/meli/ejerc/RadixSortEjerc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Clase1_B/meli/ejerc/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Clase1_B/meli/ejerc/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase2_A/.idea/sonarlint/issuestore/2/0/2084af23d98b739219561bec865e15f89d9ab764" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase2_A/.idea/sonarlint/issuestore/2/0/2084af23d98b739219561bec865e15f89d9ab764" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +52,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="RadixSortEjerc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -93,6 +98,9 @@
       <workItem from="1616185730702" duration="1059000" />
       <workItem from="1616206285632" duration="1120000" />
       <workItem from="1616249910438" duration="11210000" />
+      <workItem from="1616295473619" duration="381000" />
+      <workItem from="1616295873762" duration="1069000" />
+      <workItem from="1616359872335" duration="895000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaning StringUtil.java methods">
       <created>1616250742104</created>

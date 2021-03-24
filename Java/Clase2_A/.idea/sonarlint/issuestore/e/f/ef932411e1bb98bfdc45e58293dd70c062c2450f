@@ -1,0 +1,9 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¨¹Ë•
+H
+java:S11446"2Remove this unused private "transferencia" method.(ÖÀÁë
+D
+java:S11442".Remove this unused private "reintegro" method.(«ÓëÂ
+U	java:S106."9Replace this use of System.out or System.err by a logger.(ş÷‰ı8âè”†…/
+—
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«ÓëÂ
