@@ -8,6 +8,16 @@ public class Vehiculo {
     private double peso;
     private int ruedas;
 
+    public Vehiculo() {
+    }
+
+    public Vehiculo(int velocidad, int aceleracion, double anguloDeGiro, String patente) {
+        this.velocidad = velocidad;
+        this.aceleracion = aceleracion;
+        this.anguloDeGiro = anguloDeGiro;
+        this.patente = patente;
+    }
+
     public int getVelocidad() {
         return velocidad;
     }

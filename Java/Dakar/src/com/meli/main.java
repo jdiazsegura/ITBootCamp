@@ -3,7 +3,7 @@ package com.meli;
 public class main {
 
     public static void main(String[] args) {
-        Autos auto = new Autos();
-        auto.
+        Auto auto = new Auto();
+        System.out.println(auto.getPeso());
     }
 }
