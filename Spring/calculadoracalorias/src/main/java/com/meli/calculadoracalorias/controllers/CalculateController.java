@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping("calculate")
-public class CalculateService {
+public class CalculateController {
 
     @Autowired
     private CalculateServiceImpl calculateService;
