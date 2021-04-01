@@ -32,6 +32,7 @@ public class CalculateController {
             return new ResponseEntity<>(flag, HttpStatus.OK);
         } catch (NullPointerException e) {
             return new ResponseEntity<>(flag,HttpStatus.NOT_FOUND);
+
         }
     }
 
