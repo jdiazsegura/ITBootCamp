@@ -4,5 +4,5 @@ import com.meli.calculadoracalorias.dtos.IngredientDTO;
 
 public interface IngredientsRepository {
 
-    IngredientDTO findIngredient(String name);
+    IngredientDTO findIngredient(IngredientDTO ingredientDTO);
 }

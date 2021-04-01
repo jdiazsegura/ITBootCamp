@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public interface CalculateService {
 
-    Double findTotalCaloriesMeal(MealDTO mealDTO);
+    Object findTotalCaloriesMeal(MealDTO mealDTO);
 
     HashMap<String, Double> findCaloriesByIngredient(MealDTO mealDTO);
 

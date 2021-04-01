@@ -12,21 +12,19 @@ import java.util.Optional;
 
 
 @Repository
-public class IngredientsRepositoryImpl implements IngredientsRepository{
+public class IngredientsRepositoryImpl implements IngredientsRepository {
 
     @Override
-    public IngredientDTO findIngredient(String name) {
+    public IngredientDTO findIngredient(IngredientDTO ingredientDTO) {
         List<IngredientDTO> ingredientDTOS = null;
         ingredientDTOS = loadDataBase();
-        IngredientDTO result = null;
-        if (ingredientDTOS != null){
+        IngredientDTO result = ingredientDTO;
+        if (ingredientDTOS != null) {
             Optional<IngredientDTO> item = ingredientDTOS.stream()
-                    .filter(ingredientDTO -> ingredientDTO.getName().equals(name))
+                    .filter(ingredientDTO2 -> ingredientDTO.getName().equals(ingredientDTO2.getName()))
                     .findFirst();
-            if (item.isPresent())
-                result = item.get();
+            item.ifPresent(dto -> result.setCalories(dto.getCalories()));
         }
-
         return result;
     }
 
@@ -34,17 +32,18 @@ public class IngredientsRepositoryImpl implements IngredientsRepository{
         File file = null;
         try {
             file = ResourceUtils.getFile("classpath:food.json");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         ObjectMapper objectMapper = new ObjectMapper();
-        TypeReference<List<IngredientDTO>> typeRef = new TypeReference<List<IngredientDTO>>() {};
+        TypeReference<List<IngredientDTO>> typeRef = new TypeReference<List<IngredientDTO>>() {
+        };
         List<IngredientDTO> priceDTOS = null;
 
         try {
             priceDTOS = objectMapper.readValue(file, typeRef);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

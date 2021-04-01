@@ -10,5 +10,6 @@ import lombok.NoArgsConstructor;
 public class IngredientDTO {
 
     private String name;
+    private Double weight;
     private Double calories;
 }

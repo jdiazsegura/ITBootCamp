@@ -17,20 +17,26 @@ public class CalculateServiceImpl implements CalculateService{
     }
 
     @Override
-    public Double findTotalCaloriesMeal(MealDTO mealDTO) {
+    public MealDTO findTotalCaloriesMeal(MealDTO mealDTO) {
+        IngredientDTO breakpoint = new IngredientDTO();
         var totalCalories = 0.0;
-        for (var ingredient: mealDTO.getIngredients()) {
-            var flag = ingredientsRepository.findIngredient(ingredient.getName());
-            totalCalories += flag.getCalories();
+        try {
+            for (var ingredient : mealDTO.getIngredients()) {
+                var flag = ingredientsRepository.findIngredient(ingredient);
+                mealDTO.setTotalCalories( totalCalories += flag.getCalories() * flag.getWeight());
+            }
         }
-        return totalCalories;
+        catch(NullPointerException e){
+            return mealDTO;
+            }
+        return mealDTO;
     }
 
     @Override
     public HashMap<String, Double> findCaloriesByIngredient(MealDTO mealDTO) {
         HashMap<String,Double> caloriesHashMap = new HashMap<>();
         for (var ingredient: mealDTO.getIngredients()) {
-            var flag = ingredientsRepository.findIngredient(ingredient.getName());
+            var flag = ingredientsRepository.findIngredient(ingredient);
             caloriesHashMap.put(flag.getName(), flag.getCalories());
         }
         return caloriesHashMap;
@@ -41,7 +47,7 @@ public class CalculateServiceImpl implements CalculateService{
         double mostCalories = 0.0;
         IngredientDTO ingredientFlag = null;
         for (var ingredient: mealDTO.getIngredients()) {
-            var flag = ingredientsRepository.findIngredient(ingredient.getName());
+            var flag = ingredientsRepository.findIngredient(ingredient);
             if (flag.getCalories() > mostCalories){
                 mostCalories = flag.getCalories();
                 ingredientFlag = flag;

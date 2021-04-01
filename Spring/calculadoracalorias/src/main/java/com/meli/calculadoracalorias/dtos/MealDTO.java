@@ -13,5 +13,6 @@ public class MealDTO {
 
     private String name;
     private ArrayList<IngredientDTO> ingredients;
+    private Double totalCalories;
 
 }
