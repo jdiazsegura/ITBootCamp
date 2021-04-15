@@ -5,17 +5,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class LinkDTO {
 
-    private String url;
-    private boolean valid;
-    private Integer contador;
+    private Integer linkId;
+    private String link;
+    private String password;
+    private Integer count;
 
-    public LinkDTO(String url){
-        this.url = url;
-        contador = 0;
-        valid = true;
+    public LinkDTO() {
+        this.count = 0;
     }
 }

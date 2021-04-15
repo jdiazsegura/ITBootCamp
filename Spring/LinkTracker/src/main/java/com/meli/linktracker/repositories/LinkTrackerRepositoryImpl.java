@@ -5,40 +5,31 @@ import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Repository
 public class LinkTrackerRepositoryImpl implements LinkTrackerRepository {
 
-    private AtomicInteger contadorId = new AtomicInteger(1);
+    private final Map<Integer, LinkDTO> database = new HashMap<>();
 
-    private Map<Integer, LinkDTO> listURL;
-
-    public LinkTrackerRepositoryImpl() {
-        this.listURL = new HashMap<>();
+    @Override
+    public LinkDTO save(LinkDTO link) {
+        if(link.getLink() == null){
+            link.setLinkId(database.values().size());
+        }
+        database.put(link.getLinkId(), link);
+        return link;
     }
 
     @Override
-    public Integer addLink(String url) {
-
-        //Validar URL
-        listURL.put(contadorId.get(), new LinkDTO(url));
-        return contadorId.getAndIncrement();
+    public Optional<LinkDTO> findLinkByLinkId(Integer linkId) {
+        LinkDTO linkDTO = database.get(linkId);
+        return Optional.ofNullable(linkDTO);
     }
 
     @Override
-    public String searchLink(Integer linkId) {
-        listURL.get(linkId).setContador(listURL.get(linkId).getContador() + 1);
-        return listURL.get(linkId).getUrl();
-    }
-
-    @Override
-    public LinkDTO getMetrics(Integer linkId) {
-        return listURL.get(linkId);
-    }
-
-    @Override
-    public HashMap<Integer, LinkDTO> getMap() {
-        return (HashMap<Integer, LinkDTO>) listURL;
+    public void delete(LinkDTO linkDTO) {
+        database.remove(linkDTO.getLinkId());
     }
 }

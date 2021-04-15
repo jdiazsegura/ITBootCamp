@@ -2,7 +2,7 @@ package com.meli.starwars.repositories;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.meli.starwars.dtos.CharacterDTO;
+import com.meli.starwars.dtos.*;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ResourceUtils;
 

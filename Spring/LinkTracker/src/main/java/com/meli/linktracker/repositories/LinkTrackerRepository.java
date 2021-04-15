@@ -4,11 +4,13 @@ package com.meli.linktracker.repositories;
 import com.meli.linktracker.dto.LinkDTO;
 
 import java.util.HashMap;
+import java.util.Optional;
 
 public interface LinkTrackerRepository {
 
-    Integer addLink(String url);
-    String searchLink(Integer linkId);
-    LinkDTO getMetrics(Integer linkId);
-    HashMap<Integer, LinkDTO> getMap();
+    LinkDTO save(LinkDTO link);
+
+    Optional<LinkDTO> findLinkByLinkId(Integer linkId);
+
+    void delete(LinkDTO linkDTO);
 }
